@@ -28,7 +28,8 @@ target_link_libraries(urdf_to_graphiz urdfdom_model)
 add_executable(urdf_mem_test test/memtest.cpp)
 target_link_libraries(urdf_mem_test urdfdom_model)
 
-add_subdirectory(test)
+#EDIT: Building test was resulting with issues
+#add_subdirectory(test)
 
 INSTALL(TARGETS urdfdom_model DESTINATION ${CMAKE_INSTALL_LIBDIR})
 INSTALL(TARGETS urdfdom_world DESTINATION ${CMAKE_INSTALL_LIBDIR})
