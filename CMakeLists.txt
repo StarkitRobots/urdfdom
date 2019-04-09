@@ -39,7 +39,7 @@ find_package(catkin REQUIRED COMPONENTS urdfdom_headers console_bridge)
 
 include_directories(SYSTEM ${urdfdom_headers_INCLUDE_DIRS})
 if (NOT MSVC)
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 endif()
 
 include_directories(SYSTEM ${console_bridge_INCLUDE_DIRS})
